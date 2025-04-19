@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>App Gateway Demo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Azure Application Gateway Demo (<b>VSK</b>)</h1>
+        <div class="card-container">
+            <div class="card">
+                <img src="https://img.icons8.com/color/96/computer.png" alt="Frontend VM">
+                <h2>Frontend VM</h2>
+                <p>{{ fe_hostname }}</p>
+            </div>
+            <div class="arrow">➡️</div>
+            <div class="card">
+                <img src="https://img.icons8.com/color/96/server.png" alt="Backend VM">
+                <h2>Backend VM</h2>
+                <p>{{ be_hostname }}</p>
+            </div>
+        </div>
+        <p class="note">Refresh the page to see the load balancing effect.</p>
+    </div>
+</body>
+</html>
