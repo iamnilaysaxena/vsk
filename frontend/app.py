@@ -20,4 +20,4 @@ def home():
     return render_template("index.html", fe_hostname=fe_hostname, be_hostname=be_hostname)
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=80)
+    app.run(host="0.0.0.0", port=8000)
